@@ -48,7 +48,7 @@ social:
   - icon: linkedin
     icon_pack: fab
     link: https://www.linkedin.com/in/hugo-roussaffa/
-  - icon: stackexchange
+  - icon: stack-exchange
     icon_pack: fab
     link: https://gis.stackexchange.com/users/53945/hugo-roussaffa
   - icon: github
@@ -68,7 +68,7 @@ Hugo Roussaffa is a geospatial expert with over 14 years of experience in spatia
 
 # 🌍 Areas of expertise
 
-  🗺️ **Desktop & Wwb GIS:** Advanced proficiency in QGIS, ArcGIS, or Google Earth Engine.
+  🗺️ **Desktop & Web GIS:** Advanced proficiency in QGIS, ArcGIS, or Google Earth Engine.
 
   🐍 **Python data science:** Spatial data processing, clustering analysis, and data visualization.
 

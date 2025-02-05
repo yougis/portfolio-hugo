@@ -1,4 +1,6 @@
 ---
+draft: true
+
 # An instance of the Accomplishments widget.
 # Documentation: https://docs.hugoblox.com/page-builder/
 widget: accomplishments
@@ -16,6 +18,7 @@ subtitle:
 # Date format
 #   Refer to https://docs.hugoblox.com/customization/#date-format
 date_format: Jan 2006
+
 
 # Accomplishments.
 #   Add/remove as many `item` blocks below as you like.
@@ -35,7 +38,7 @@ item:
     date_end: ''
     date_start: '2021-01-01'
     description: Formulated informed blockchain models, hypotheses, and use cases.
-    organization: edX
+    organization: 
     organization_url: https://www.edx.org
     title: Blockchain Fundamentals
     url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals

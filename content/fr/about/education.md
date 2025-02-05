@@ -21,28 +21,28 @@ date_format: Jan 2006
 #   Required fields are `title`, `company`, and `date_start`.
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
+
+
 experience:
-  - title: MEng Electronic Engineering
-    company: University X
+  - title: Master 2 - CARTHAGEO
+    company: Université Paris 7, Paris 1 Sorbonne & ENSG
     company_url: ''
     company_logo: org-x
-    location: California
-    date_start: '2021-01-01'
-    date_end: '2022-01-01'
-    description: |2-
-        * Dissertation on Y
-        * Basketball team
-        * DJ club
-
-  - title: BEng Electronic Engineering
-    company: University X
+    location: Paris
+    date_start: '2009-01-01'
+    date_end: '2011-12-31'
+    description: Mention Bien
+  
+  - title: Licence in Géographie
+    company: Université de Poitiers & Paris 7 Diderot
     company_url: ''
     company_logo: org-x
-    location: California
-    date_start: '2016-01-01'
-    date_end: '2020-12-31'
-    description: My dissertation was on X
-
+    location: Poitiers, Paris
+    date_start: '2005-01-01'
+    date_end: '2008-12-31'
+    description: Mention assez bien
+  
+  
 design:
   columns: '1'
 ---

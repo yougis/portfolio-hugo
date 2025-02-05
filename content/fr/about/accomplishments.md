@@ -1,4 +1,6 @@
 ---
+draft: true
+
 # An instance of the Accomplishments widget.
 # Documentation: https://docs.hugoblox.com/page-builder/
 widget: accomplishments
@@ -22,6 +24,9 @@ date_format: Jan 2006
 #   `title`, `organization`, and `date_start` are the required parameters.
 #   Leave other parameters empty if not required.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
+
+
+
 item:
   - certificate_url: https://www.coursera.org
     date_end: ''
@@ -35,7 +40,7 @@ item:
     date_end: ''
     date_start: '2021-01-01'
     description: Formulated informed blockchain models, hypotheses, and use cases.
-    organization: edX
+    organization: 
     organization_url: https://www.edx.org
     title: Blockchain Fundamentals
     url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
