@@ -28,12 +28,14 @@ content:
   filter_button:
     - name: All
       tag: '*'
-    - name: Machine Learning
-      tag: ML
-    - name: Computer Vision
-      tag: CV
-    - name: NLP
-      tag: NLP
+    - name: GIS
+      tag: GIS
+    - name: Map Design
+      tag: Map
+    - name: Data Science
+      tag: Python, GeoPandas, Rasterio, H3
+    - name: Data Management 
+      tag: Scrapping, cleanning, catalog, pipeline
 
 design:
   columns: '1'

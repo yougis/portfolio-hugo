@@ -1,0 +1,20 @@
+<div class="gallery">
+    {{ .Inner | markdownify }}
+  </div>
+  
+  <style>
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    justify-items: center;
+  }
+  .gallery img {
+    width: 100%;
+    height: auto;
+    max-width: 250px; /* Ajuste la taille max */
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  </style>
+  

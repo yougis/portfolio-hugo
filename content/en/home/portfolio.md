@@ -14,8 +14,9 @@ title: ''
 subtitle: ''
 
 content:
+
   # Page type to display. E.g. project.
-  page_type: projects
+  page_type: project
 
   # Default filter index (e.g. 0 corresponds to the first `filter_button` instance below).
   filter_default: 0
@@ -30,6 +31,8 @@ content:
       tag: '*'
     - name: GIS
       tag: GIS
+    - name: Map Design
+      tag: Map
     - name: Data Science
       tag: Python, GeoPandas, Rasterio, H3
     - name: Data Management 

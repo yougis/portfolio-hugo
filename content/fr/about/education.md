@@ -26,7 +26,10 @@ date_format: Jan 2006
 experience:
   - title: Master 2 - CARTHAGEO
     company: Université Paris 7, Paris 1 Sorbonne & ENSG
-    company_url: ''
+    company_url: ''--
+type: widget_page
+---
+
     company_logo: org-x
     location: Paris
     date_start: '2009-01-01'
