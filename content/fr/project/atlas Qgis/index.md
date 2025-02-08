@@ -3,6 +3,7 @@ title: Atlas QGIS / Incendies
 summary: Réalisation d'un atlas complexe avec QGIS à propos des incendies dans chaque commune de Nouvelle-Calédonie depuis 20 ans.
 
 tags:
+  - Atlas
   - Map
   - QGIS
   - dataviz
@@ -22,7 +23,7 @@ This project aims to develop an interactive dashboard using the ESRI platform to
 
 ## Compétences exploitées et livrables 
 QGIS
-Data Visualization
+Data Visualisation
 Data Management
 
 ## Galerie d’images

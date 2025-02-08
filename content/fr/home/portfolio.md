@@ -34,10 +34,10 @@ content:
       tag: Dashboard
     - name: Atlas
       tag: Atlas
-    - name: Repport
-      tag: Repport
-    - name: Data Science
-      tag: Science
+    - name: Rapport
+      tag: Rapport
+    - name: Analyse spatiale
+      tag:  Analyse spatiale
     - name: Geoprocessing
       tag:  Geoprocessing
     - name: Database

@@ -4,7 +4,9 @@ summary: Atlas cartographique et statistique
 
 tags:
   - Map
-  - Science
+  - Atlas
+  - Analyse spatiale
+  
 date: 2010-01-01
 
 authors:
@@ -40,3 +42,12 @@ Analyse spatiale, simulation de parcours, Classification acendantes Hierarchique
 ![Image 13](Atlas-du_Velib_images/atlas_velib_12.png)  
 ![Image 14](Atlas-du_Velib_images/atlas_velib_13.png)  
 {{< /gallery >}}
+
+
+
+## Compétences exploitées et livrables 
+Adobe illustrator
+QGIS
+Data Visualisation
+Data Management
+Analyse de données

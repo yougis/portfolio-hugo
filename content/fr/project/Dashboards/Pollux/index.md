@@ -3,8 +3,6 @@ title: Dashboard ESRI / Pollution lumineuse
 summary: Réalisation d'un dashboard avec Arcgis Online à propos de la pollution lumineuse en Nouvelle-Calédonie
 
 tags:
-  - Map
-  - Science
   - Dashboard
 date: 2023-01-01
 
@@ -23,7 +21,7 @@ This project aims to develop an interactive dashboard using the ESRI platform to
 ## Compétences exploitées et livrables 
 ArcGIS Online
 ArcGIS
-Data Visualization
+Data Visualisation
 Data Management
 
 ## Galerie d’images
