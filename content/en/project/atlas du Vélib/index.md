@@ -3,8 +3,7 @@ title: Atlas du Vélib
 summary: Atlas cartographique et statistique
 
 tags:
-  - Map
-  - Science
+  - GIS
 date: 2010-01-01
 
 authors:

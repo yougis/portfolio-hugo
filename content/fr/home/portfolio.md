@@ -30,12 +30,20 @@ content:
       tag: '*'
     - name: GIS
       tag: GIS
-    - name: Map Design
-      tag: Map
+    - name: Dashboard
+      tag: Dashboard
+    - name: Atlas
+      tag: Atlas
+    - name: Repport
+      tag: Repport
     - name: Data Science
-      tag: Python, GeoPandas, Rasterio, H3
-    - name: Data Management 
-      tag: Scrapping, cleanning, catalog, pipeline
+      tag: Science
+    - name: Geoprocessing
+      tag:  Geoprocessing
+    - name: Database
+      tag:  Database
+
+
 
 design:
   columns: '1'
