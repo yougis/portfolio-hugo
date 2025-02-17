@@ -48,7 +48,7 @@ social:
   - icon: linkedin
     icon_pack: fab
     link: https://www.linkedin.com/in/hugo-roussaffa/
-  - icon: stackexchange
+  - icon: stack-exchange
     icon_pack: fab
     link: https://gis.stackexchange.com/users/53945/hugo-roussaffa
   - icon: github

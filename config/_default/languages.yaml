@@ -7,12 +7,24 @@ en:
   languageCode: en-us
   # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
   contentDir: content/en
-
+  title: Hugo Roussaffa a remote geomatic expert
+  params:
+    description: My portfolio of my geomatics projects
 # Uncomment the lines below to configure your website in a second language.
 fr:
   languageCode: fr-fr
   contentDir: content/fr
-
+  title: Hugo Roussaffa expert en géomatique à distance 
+  params:
+    description: Mon portfolio de mes projets géomatiques
+  menu:
+    main:
+      - name: Home
+        url: '/fr'
+        weight: 1
+      - name: A propos
+        url: 'about'
+        weight: 2
 #zh:
 #  languageCode: zh-Hans
 #  contentDir: content/zh
