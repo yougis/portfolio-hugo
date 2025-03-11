@@ -5,28 +5,43 @@ date: "2024-02-14T10:00:00+01:00"
 tags: ["gis", "scraping", "osm", "google maps", "postgis"]
 categories: ["scraping"]
 summary: "Extraire et structurer des points d’intérêt issus d’openstreetmap (OSM) et google maps"
-draft: false
+draft: true
 
 authors:
 - "Hugo Roussaffa"
-- "Developpeur et administrateur"
+- "Developpeur"
 ---
 
-Pour enrichir vos analyses SIG ou automatiser une veille géospatiale, la collecte et la structuration des données de points d’intérêt (POI) est stratégique. L’accès à des données précises et à jour est souvent un défi.
+**Objectif** : démontrer comment extraire des POI d'openstreetmap et google maps, nettoyer les données, les stocker dans postgis, et les visualiser de manière interactive.
 
-## Contexte
-J'ai developpé ce projet pour répondre à une problématique concrète : extraire efficacement des POI depuis OpenStreetMap (OSM) et Google Maps, les organiser et les exploiter pour des cas d’usage variés comme le votre :
+
+## Les points clés :
+
+- scraping et extraction : utilisation de l'overpass api (OSM) et de Google Places API pour récupérer des données.
+- gestion et traitement : manipulation avec python, pandas et geopandas.
+- stockage spatial : insertion dans postgis via psycopg2.
+- visualisation interactive : carte simple réalisée avec folium.
+- environnement moderne : gestion des dépendances avec poetry et documentation via quarto.
+
+Le rapport complet et interactif, généré avec quarto, détaille chaque étape et présente les résultats. pour en savoir plus, consultez le rapport interactif détaillé.
+
+[Consulter le rapport interactif complet](https://yougis.github.io/scraping-poi-osm-googlemap/scraping_osm.html) 
+
+
+
+<iframe src="https://yougis.github.io/scraping-poi-osm-googlemap/scraping_osm.html#fig-map-osm-hospitals" width="100%" height="600px"></iframe>
+
+## Exemple de cas d’usage addressés :
 
 - L’analyse de la répartition des commerces et des services d'une ville ou un pays,
-- La création d’une applications de géolocalisation basées sur des POI enrichis.
 - L’étude de la concurrence et des tendances du marché via des données spatialisées.
-- L'automatisation de la mise à jour de bases de données POI pour des plateformes SIG.
 
-### Ce que vous allez découvrir :
+## Ce que vous allez découvrir :
 - **Comment je scrapes des POI** avec l'Overpass API d'OSM et la Google Places API.
 - **Je vais structurer et stocker les données** dans des fichiers CSV, Excel geoJson et même dans une base PostGIS 
 - **Vous permettre de visualiser mes résultats** sur une carte interactive grâce à Folium.
 - **Comment on gére tout cela d'un environnement de developpement à la production** avec Poetry, tester et documenter le tout.
+
 
 ## Mes compétences en action
 
