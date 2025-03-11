@@ -5,7 +5,7 @@ date: "2024-02-14T10:00:00+01:00"
 tags: ["gis", "scraping", "osm", "google maps", "postgis"]
 categories: ["scraping"]
 summary: "Extraire et structurer des points d’intérêt issus d’openstreetmap (OSM) et google maps"
-draft: true
+draft: false
 
 authors:
 - "Hugo Roussaffa"
