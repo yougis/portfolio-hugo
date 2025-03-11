@@ -4,30 +4,32 @@ subtitle: Extraction et structuration des données géospatiales
 date: "2024-02-14T10:00:00+01:00"
 tags: ["gis", "scraping", "osm", "google maps", "postgis"]
 categories: ["scraping"]
-summary: "Extraire et structurer des points d’intérêt issus d’openstreetmap (OSM) et google maps"
+summary: "Phase 1: Extraire et structurer des points d’intérêt issus d’openstreetmap (OSM) et de Google maps"
 draft: false
 
 authors:
 - "Hugo Roussaffa"
 - "Developpeur"
+
 ---
 
-**Objectif** : démontrer comment extraire des POI d'openstreetmap et google maps, nettoyer les données, les stocker dans postgis, et les visualiser de manière interactive.
+La phase 1 conciste á recolter des donnés disponibles. Je vais vous démontrer que le scraping de POI (extraction de données), est une démarche complète qui allie rigueur technique et créativité. Grâce à une gestion moderne du projet avec Poetry et à une documentation soignée via Quarto, il est aisé de reprendre ce projet, de l'adapter à d'autres territoires (comme l'Australie ou les Philippines) et de servir de base pour des analyses SIG avancées.
+
 
 
 ## Les points clés :
 
-- scraping et extraction : utilisation de l'overpass api (OSM) et de Google Places API pour récupérer des données.
-- gestion et traitement : manipulation avec python, pandas et geopandas.
-- stockage spatial : insertion dans postgis via psycopg2.
-- visualisation interactive : carte simple réalisée avec folium.
-- environnement moderne : gestion des dépendances avec poetry et documentation via quarto.
+- scraping et extraction : utilisation de l'Overpass api (OSM) et de Google Places API pour récupérer des données.
+- gestion et traitement : manipulation avec Python, Pandas et Geopandas.
+- stockage spatial : insertion dans Postgis via Psycopg2.
+- visualisation interactive : carte simple réalisée avec Folium.
+- environnement moderne : gestion des dépendances avec Poetry et rapport produit avec Quarto.
 
-Le rapport complet et interactif, généré avec quarto, détaille chaque étape et présente les résultats. pour en savoir plus, consultez le rapport interactif détaillé.
+Le rapport complet et interactif détail chaque étape et présente les résultats. Pour en savoir plus, consultez le rapport interactif détaillé via ce lien :
 
 [Consulter le rapport interactif complet](https://yougis.github.io/scraping-poi-osm-googlemap/scraping_osm.html) 
 
-
+Pour un apercu rapide du projet je vous propose de consulter le contenu du rapport intégré ci dessous:
 
 <iframe src="https://yougis.github.io/scraping-poi-osm-googlemap/scraping_osm.html#fig-map-osm-hospitals" width="100%" height="600px"></iframe>
 
@@ -40,7 +42,7 @@ Le rapport complet et interactif, généré avec quarto, détaille chaque étape
 - **Comment je scrapes des POI** avec l'Overpass API d'OSM et la Google Places API.
 - **Je vais structurer et stocker les données** dans des fichiers CSV, Excel geoJson et même dans une base PostGIS 
 - **Vous permettre de visualiser mes résultats** sur une carte interactive grâce à Folium.
-- **Comment on gére tout cela d'un environnement de developpement à la production** avec Poetry, tester et documenter le tout.
+- **Comment je gére tout cela d'un environnement de developpement à la production** avec Poetry, tester et documenter le tout.
 
 
 ## Mes compétences en action
@@ -56,37 +58,43 @@ Plusieurs compétences techniques sont déployées dans ce projet :
    - **Pandas & GeoPandas** : Manipuler et nettoyer les données obtenues.
    - **JSON** : Structurer les réponses API de façon lisible et exploitable.
 
-3. **Stockage dans une base de données**
-   - **PostGIS** : Créer une base de données spatiale pour stocker et interroger les POI.
-   - **SQL & Psycopg2** : Insérer et gérer les données via des scripts automatisés.
-
-4. **Visualisation interactive**
+3. **Visualisation interactive**
    - **Folium** : Afficher les POI sur une carte interactive pour une visualisation immédiate.
-   - **Deck.gl (optionnel)** : Explorer des représentations en 3D pour les plus curieux.
 
-5. **Gestion de l'environnement et documentation**
-   - **Poetry** : Simplifier la gestion des dépendances et la reproductibilité de l'environnement.
+4. **Documentation**
    - **Quarto** : Générer des rapports interactifs et bien documentés qui détaillent chaque étape du projet.
+
+5. **Gestion de l'environnement et du code source**
+   - **Poetry** : Simplifier la gestion des dépendances et la reproductibilité de l'environnement technique.
+   - **Git** : gérer et versionner le code source, ainsi que de mettre en place l'intégration continue avec l'usage des actions Github pour publier le site sur le serveur de production.
 
 ## La démarche en 5 étapes
 
-1. **Extraction des POI**  
-   On commence par lancer un script Python pour interroger l’Overpass API. Le résultat est stocké dans un fichier JSON, qui contient une liste de POI (par exemple, des hôpitaux à Paris).
+```mermaid
+flowchart TB
+    A( <b>Extraction POI</b><br>Overpass API / JSON)
+    B( <b>Nettoyage</b><br>Validation & Filtrage)
+    C( <b>Stockage</b><br>Insertion dans PostGIS)
+    D( <b>Visualisation</b><br>Carte Folium)
+    E( <b>Documentation</b><br>Rapport Quarto)
 
-2. **Nettoyage et validation**  
-   Un coup d'œil dans le JSON pour s'assurer que les données sont complètes et bien structurées. On élimine les doublons ou les données incomplètes.
+    A --> B
+    B --> C
+    C --> D
+    D --> E
 
-3. **Insertion dans PostGIS**  
-   Les données validées sont insérées dans une base PostGIS, ce qui permet d’effectuer des analyses spatiales avancées par la suite.
 
-4. **Visualisation interactive**  
-   Grâce à Folium, les POI sont affichés sur une carte interactive. Vous pouvez zoomer, cliquer et explorer pour voir comment les données se répartissent géographiquement.
+```
 
-5. **Documentation technique via Quarto**  
-   L’ensemble du processus est documenté dans un notebook Quarto qui génère un rapport interactif. Ce rapport est accessible directement depuis mon portfolio et permet aux curieux de reproduire l’expérience.
+##  Perspectives
 
-## Conclusion et perspectives
+Ce projet est le premier de la serie suivante : 
 
-Ce projet démontre que le scraping de POI n’est pas qu’une simple extraction de données, c’est une démarche complète qui allie rigueur technique et créativité. Grâce à une gestion moderne avec Poetry et à une documentation soignée via Quarto, il est aisé de reprendre ce projet, de l'adapter à d'autres territoires (comme l'Australie ou les Philippines) et d'en exploiter tout le potentiel pour des analyses SIG poussées.
 
-Envie d’en savoir plus ? Consultez le rapport interactif détaillé ci-dessous et n’hésitez pas à me laisser vos retours ou questions !
+| Phase      | Projet                                           | Technologies clés                                          | Déclinaisons possibles                                               | Objectif principal                                                                                       |
+|------------|--------------------------------------------------|------------------------------------------------------------|----------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+| Phase 1    | Scraping et gestion des données géospatiales     | Python, Pandas, Scrapy, Overpass API, Google Maps API, PostGIS, folium/leaflet     | Extraction depuis OSM et Google Maps, 3 zones géographiques et 3 échelles (ville, province, état/pays) | Construire une base de données géospatiales commune exploitable par les phases suivantes                   |
+| Phase 2    | Automatisation du workflow géospatial            | Prefect, Python, PostGIS                                   | Mise en place d’un ETL automatisé pour la mise à jour de la base       | Automatiser l’extraction et l’actualisation des données géospatiales                                      |
+| Phase 3    | Visualisation interactive en 3D           | Deck.gl,  Streamlit, PostGIS                   | Cartographie interactive en 3D, comparaison entre différentes technologies web carto   | Présenter de façon dynamique et interactive les données stockées                                         |
+| Phase 4    | Analyse spatiale et modélisation avec H3          | H3, Python (GeoPandas, Folium), QGIS                        | Étude des flux et densités (mobilité, infrastructures urbaines)      | Exploiter les données pour réaliser des analyses spatiales avancées et démontrer leur valeur ajoutée       |
+| Phase 5    | Publication et partage via GeoNode               | GeoNode, Django, PostGIS , CKAN                                  | Création d’un portail de données, catalogue interactif, intégration d’API | Valoriser et partager les résultats via une plateforme web accessible et collaborative                  |
