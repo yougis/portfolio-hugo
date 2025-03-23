@@ -37,11 +37,21 @@ experience:
         * Automatisation de processus
         * Traitement de données parallelisés
 
-        
-  - title: Géomaticien, Fonctionnaire Catégorie A, Filière Technique
+  - title: Enseignant vacataire SIG
+    company: Université de la Nouvelle-Calédonie
+    company_url: ''
+    company_logo: UNC_160
+    location: Nouvelle-Calédonie
+    date_start: '2020-06-01'
+    date_end: '2024-08-01'
+    description: |2-
+        * SIG
+        * Télédétection
+        * Photogrammétrie   
+  - title: Géomaticien
     company: Province Sud
     company_url: ''
-    company_logo: 
+    company_logo: province_sud
     location: Nouvelle-Calédonie
     date_start: '2011-05-01'
     date_end: '2021-06-01'
@@ -51,7 +61,7 @@ experience:
         * Chef de projet SIG : études de faisabilité, gestion des appels d'offres
         * Maintenance d'applications web SIG et de serveurs cartographiques
 
-  - title: Entrepreneur salarié - Créateur d’entreprise Geodatup
+  - title: Entrepreneur - GeoDatup
     company: Maison de l'initiative
     company_url: ''
     company_logo: 
@@ -62,11 +72,11 @@ experience:
         * Développement de plugins QGIS3 et formation des utilisateurs
         * Projets de photogrammétrie par drone et déploiement d'objets connectés (IoT)
 
-  - title: Consultant pour une plateforme de partage de données
+  - title: Consultant SIG
     company: Fauna & Flora International (ONG)
     company_url: ''
     company_logo: 
-    location: Myanmar
+    location: Yangoon, Myanmar
     date_start: '2015-05-01'
     date_end: '2015-07-01'
     description: |2-
@@ -91,5 +101,5 @@ publications:
     url: ''
 
 design:
-  columns: '2'
+  columns: '1'
 ---

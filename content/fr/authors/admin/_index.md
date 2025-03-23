@@ -54,6 +54,9 @@ social:
   - icon: github
     icon_pack: fab
     link: https://github.com/yougis
+  - icon: OSM
+    icon_pack: fab
+    link: https://www.openstreetmap.org/user/Hugo%20Roussaffa/
  
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
@@ -66,17 +69,17 @@ social:
 ---
 Hugo Roussaffa est un expert en géomatique avec plus de 14 ans d’expérience dans les domaines de l’analyse spatiale, de la cartographie SIG et du développement d’outils géospatiaux. Grâce à sa double compétence en SIG et en informatique, il conçoit des solutions sur mesure, alliant rigueur technique et innovation.
 
-# 🌍 Ses domaines d’expertise
+# 🌍 Domaines d’expertise
 
   🗺️ SIG desktop & web : maîtrise avancée de QGIS, ArcGIS, et Google Earth Engine.
 
   🐍 Data science avec Python : traitement de données spatiales, analyse de clusters, et data visualisation.
 
-  🗄️ Gestion de données spatiales : spécialiste des bases PostGIS, du SQL, du framework DBT, et des systèmes d’indexation spatiale comme H3.
+  🗄️ Gestion de données spatiales : spécialiste des bases PostGIS, du SQL, du framework DBT et des systèmes d’indexation spatiale comme H3.
 
-  🌐 Données ouvertes : expertise en OpenStreetMap, programmes Copernicus, et autres sources open data.
+  🌐 Données ouvertes : expertise sur OpenStreetMap, programmes satelite Copernicus et NASA, et bien autres sources opendata.
 
-  📥 Echange et acces des données collaboratives via API et catalogue : API REST, Spatio Temporel Asset Catalog (STAC).
+  📥 Echange et accès des données collaboratives via API et catalogue : API REST, Spatio Temporel Asset Catalog (STAC).
 
 
 🎓 Ce qui le distingue :

@@ -22,17 +22,17 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
-  - title: Master 2 - CARTHAGEO
-    institution: Université Paris 7, Paris 1 Sorbonne & ENSG
+  - title: Level 7 - [Master's degree](http://en.wikipedia.org/wiki/Master%27s_degree#Comparable_European_degrees) 
+    institution: University Paris 7, Paris 1 Sorbonne & ENSG
     institution_url: ''
     institution_logo: 
     location: Paris
     date_start: '2009-01-01'
     date_end: '2011-12-31'
-    description: Master's program in Geomatics, received "Mention Bien" (Good)
+    description: Master's program in Geomatics, received "Mention Bien" (Good). 
 
   - title: Bachelor's in Geography
-    institution: Université de Poitiers & Paris 7 Diderot
+    institution: University Poitiers & Paris 7 Diderot
     institution_url: ''
     institution_logo: 
     location: Poitiers, Paris
@@ -44,3 +44,4 @@ experience:
 design:
   columns: '1'
 ---
+
