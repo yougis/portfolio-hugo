@@ -86,4 +86,4 @@ Hugo transforms complex data into actionable insights through a combination of s
 
 💼 Looking for an expert to boost your GIS projects?
 Hugo is ready to take on new challenges.
-{{< icon name="download" pack="fas" >}} {{< staticref "uploads/cv_en_hugo_roussaffa.pdf" "newtab" >}}Download{{< /staticref >}} my resumé as a PDF.
+{{< icon name="download" pack="fas" >}} {{< staticref "uploads/cv_geomatic_en.pdf" "newtab" >}}Download{{< /staticref >}} my resume as a PDF.
