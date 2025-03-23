@@ -28,7 +28,7 @@ experience:
     company: Université Paris 7, Paris 1 Sorbonne & ENSG
     company_url: ''
 
-    company_logo: org-x
+    company_logo: 
     location: Paris
     date_start: '2009-01-01'
     date_end: '2011-12-31'
@@ -37,7 +37,7 @@ experience:
   - title: Licence in Géographie
     company: Université de Poitiers & Paris 7 Diderot
     company_url: ''
-    company_logo: org-x
+    company_logo: 
     location: Poitiers, Paris
     date_start: '2005-01-01'
     date_end: '2008-12-31'

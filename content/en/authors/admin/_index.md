@@ -86,4 +86,4 @@ Hugo transforms complex data into actionable insights through a combination of s
 
 💼 Looking for an expert to boost your GIS projects?
 Hugo is ready to take on new challenges.
-{{< icon name="download" pack="fas" >}} {{< staticref "uploads/cv_geomatic_en.pdf" "newtab" >}}Download{{< /staticref >}} my resume as a PDF.
+{{< icon name="download" pack="fas" >}} {{< staticref "https://github.com/yougis/cv-quarto/raw/refs/heads/main/cv_geomatic_fr.pdf" "newtab" >}}Download{{< /staticref >}} my resume as a PDF.

@@ -22,25 +22,27 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
-  - title: Responsable du pôle Système d’Information et des projets Géomatiques
-    company: Observatoire de l'Environnement en Nouvelle-Calédonie (OEIL)
+  - title: Responsable du pôle SIG
+    company: Observatoire de l'Environnement (OEIL)
     company_url: ''
-    company_logo: ''
-    location: Nouméa, Nouvelle-Calédonie
+    company_logo: oeilnc
+    location: Nouvelle-Calédonie
     date_start: '2021-06-01'
     date_end: '2024-08-01'
     description: |2-
-        * Administration du système d'information (SI), incluant les volets décisionnels et géographiques
-        * Garantie de la cohérence, de l'intégrité et de la sécurité du SI
-        * Coordination du développement des services numériques et des données
-        * Analyse des besoins et rédaction de cahiers des charges techniques
-        * Promotion et communication des activités du pôle
+        * Gestion d'équipe 
+        * Administration de serveurs 
+        * Développement d'outils de visualisation
+        * Analyse de données spatiales
+        * Automatisation de processus
+        * Traitement de données parallelisés
 
+        
   - title: Géomaticien, Fonctionnaire Catégorie A, Filière Technique
     company: Province Sud
     company_url: ''
-    company_logo: ''
-    location: Nouméa, Nouvelle-Calédonie
+    company_logo: 
+    location: Nouvelle-Calédonie
     date_start: '2011-05-01'
     date_end: '2021-06-01'
     description: |2-
@@ -52,7 +54,7 @@ experience:
   - title: Entrepreneur salarié - Créateur d’entreprise Geodatup
     company: Maison de l'initiative
     company_url: ''
-    company_logo: ''
+    company_logo: 
     location: Toulouse, France
     date_start: '2016-04-01'
     date_end: '2018-05-01'
@@ -63,7 +65,7 @@ experience:
   - title: Consultant pour une plateforme de partage de données
     company: Fauna & Flora International (ONG)
     company_url: ''
-    company_logo: ''
+    company_logo: 
     location: Myanmar
     date_start: '2015-05-01'
     date_end: '2015-07-01'
@@ -74,7 +76,7 @@ experience:
   - title: Chef de projet - Statistiques
     company: CEDET, Université Paris 7 Diderot
     company_url: ''
-    company_logo: ''
+    company_logo: 
     location: Paris, France
     date_start: '2009-01-01'
     date_end: '2010-12-31'
@@ -89,5 +91,5 @@ publications:
     url: ''
 
 design:
-  columns: '1'
+  columns: '2'
 ---

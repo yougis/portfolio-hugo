@@ -25,12 +25,12 @@ experience:
   - title: Head of Information Systems and Geomatics Projects
     company: Observatory of the Environment in New Caledonia (OEIL)
     company_url: 'https://oeil.nc'
-    company_logo: ''
-    location: Nouméa, New Caledonia
+    company_logo: oeilnc
+    location: New Caledonia
     date_start: '2021-06-01'
     date_end: '2024-08-01'
     description: |2-
-        * Administration of the information system (IS), including decision-making and geographic components
+        * Administration of the information system and GIS team
         * Ensuring the consistency, integrity, and security of the IS
         * Coordinating the development of digital services and data
         * Analyzing needs and drafting technical specifications
@@ -39,8 +39,8 @@ experience:
   - title: Geomatician, Category A Civil Servant, Technical Sector
     company: South Province
     company_url: ''
-    company_logo: ''
-    location: Nouméa, New Caledonia
+    company_logo: 
+    location: New Caledonia
     date_start: '2011-05-01'
     date_end: '2021-06-01'
     description: |2-
@@ -52,7 +52,7 @@ experience:
   - title: Entrepreneur - Founder of Geodatup
     company: Maison de l'initiative
     company_url: ''
-    company_logo: ''
+    company_logo: 
     location: Toulouse, France
     date_start: '2016-04-01'
     date_end: '2018-05-01'
@@ -63,7 +63,7 @@ experience:
   - title: Consultant for a Data Sharing Platform
     company: Fauna & Flora International (NGO)
     company_url: ''
-    company_logo: ''
+    company_logo: 
     location: Myanmar
     date_start: '2015-05-01'
     date_end: '2015-07-01'
@@ -74,7 +74,7 @@ experience:
   - title: Project Manager - Statistics
     company: CEDET, Paris 7 Diderot University
     company_url: ''
-    company_logo: ''
+    company_logo: 
     location: Paris, France
     date_start: '2009-01-01'
     date_end: '2010-12-31'

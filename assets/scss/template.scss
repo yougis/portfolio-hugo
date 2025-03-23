@@ -123,14 +123,14 @@ ul.network-icon .big-icon {
   overflow: hidden;
   transition: transform 0.2s;
   margin: 10px;
-  text-align: center;
-  max-width: 250px;
   display: inline-block;
+  min-width: 100%;
 }
 
 .card:hover {
   transform: scale(1.05);
 }
+
 
 .card-link {
   text-decoration: none;
@@ -138,13 +138,13 @@ ul.network-icon .big-icon {
   display: block;
   padding: 20px;
 }
-
 .card-icon {
   font-size: 2.5rem;
   margin-bottom: 10px;
 }
 
 .card-title {
+  
   font-size: 1.25rem;
   margin: 0 0 10px;
 }

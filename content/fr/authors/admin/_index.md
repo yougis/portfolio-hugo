@@ -83,4 +83,4 @@ Hugo Roussaffa est un expert en géomatique avec plus de 14 ans d’expérience 
 Hugo transforme des données complexes en insights exploitables grâce à une approche combinant vision stratégique et solutions techniques robustes.
 Titulaire d’un Master en géomatique, il est passionné par l’innovation technologique et l’analyse de données spatiales. Il a travaillé pour des organisations internationales, des ONG, et des entreprises privées, et a développé des outils géospatiaux pour des projets d'observation de la Terre, de gestion de l’eau, et de développement territorial. Il a maintenu des bases de données géospatiales, conçu des applications web cartographiques, et formé des équipes et des étudiants aux méthodes et logiciels de l'univers géospatial.
 
-{{< icon name="download" pack="fas" >}} {{< staticref "uploads/cv_geomatic_fr.pdf" "newtab" >}}Télécharger{{< /staticref >}} mon CV en PDF.
+{{< icon name="download" pack="fas" >}} {{< staticref "https://github.com/yougis/cv-quarto/raw/refs/heads/main/cv_geomatic_fr.pdf" "newtab" >}}Télécharger{{< /staticref >}} mon CV en PDF.

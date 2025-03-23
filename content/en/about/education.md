@@ -25,7 +25,7 @@ experience:
   - title: Master 2 - CARTHAGEO
     institution: Université Paris 7, Paris 1 Sorbonne & ENSG
     institution_url: ''
-    institution_logo: org-x
+    institution_logo: 
     location: Paris
     date_start: '2009-01-01'
     date_end: '2011-12-31'
@@ -34,7 +34,7 @@ experience:
   - title: Bachelor's in Geography
     institution: Université de Poitiers & Paris 7 Diderot
     institution_url: ''
-    institution_logo: org-x
+    institution_logo: 
     location: Poitiers, Paris
     date_start: '2005-01-01'
     date_end: '2008-12-31'
