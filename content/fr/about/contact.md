@@ -10,7 +10,7 @@ headless: true
 weight: 50
 
 title: Vous avez une question ?--- Contactez-moi
-subtitle:s
+subtitle:
 
 content:
   # Automatically link email and phone or display as text?

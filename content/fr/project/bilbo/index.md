@@ -1,6 +1,8 @@
 ---
-title: Indexer toute l'information environnementale sur une grille vectorielle H3
-summary: 
+title: Géotraitements et analyses spatiales environnementales en masse
+last-modified: 2024-07-03 01:47:57Z
+date: 2023-02-13 02:49:37Z
+summary: Harmoniser la production díndicateurs environnementaux 
 
 tags:
   - Science
@@ -14,34 +16,39 @@ authors:
 - "Developpeur et administrateur"
 ---
 
-## Description du projet 
-
-Notre projet consiste à créer un système d'information décisionnel basé sur des données géographiques et environnementales. Il à pour vocation à exploiter des données sur les incendies, l'occupation des sols, les limites administratives et des indicateurs de sécheresse et de pollution lumineuse etc. Les données seront indexées sur une grille H3 pour une analyse spatiale fine. Les traitements seront réalisés à l'aide d'algorithmes Python et les datamarts seront générés à l'aide de DBT, un générateur SQL basé sur les templates Jinja.
-
-Notre projet se distingue des projets de business intelligence standard par sa capacité à intégrer des données géographiques et environnementales, à effectuer une analyse spatiale fine grâce à l'indexation H3 et à être flexible pour répondre aux besoins spécifiques.
-
-H3 est un système d'indexation spatiale hexagonale développé par Uber, qui permet de diviser la surface de la Terre en une grille de hexagones de tailles variables. Il est particulièrement utile pour l'analyse spatiale fine des données, car il permet de stocker les données à différents niveaux de granularité.
-
-Les avantages d'utiliser H3 par rapport à un système d'information géographique standard sont nombreux:
-
-- Il permet d'adapter la finesse de l'analyse spatiale des données, car il permet de stocker les données à différents niveaux de granularité spatiale.
--  Il est également plus efficace en termes de stockage de données, car il permet de stocker des données de différentes tailles dans une seule grille.
--  Il est facilement utilisable avec des outils de visualisation tels que des tableaux de bord géographiques, permettant une meilleure compréhension des données pour les utilisateurs.
-	
-
-En utilisant H3, nous pouvons mieux comprendre les risques liés aux incendies, la sécheresse et la pollution lumineuse. L'indexation H3 permet une analyse spatiale fine des données, cela signifie que nous pouvons identifier les zones les plus touchées par la sécheresse ou la pollution lumineuse avec une précision accrue.
-
-DBT est un outil clé pour notre projet car il nous permet de générer des datamarts à partir de nos données. Il utilise des templates Jinja pour générer des requêtes SQL qui peuvent être utilisées pour créer des tableaux de bord géographiques et des rapports automatisés. Cela permet une meilleure compréhension des données pour les utilisateurs et une prise de décision plus efficace.
-
-En résumé, notre projet est basé sur l'utilisation de données géographiques et environnementales, l'analyse spatiale fine grâce à l'indexation H3 et la flexibilité pour répondre aux besoins spécifiques en utilisant DBT pour générer des datamarts et des tableaux de bord géographiques et des rapports automatisés.
 
 
-## Compétences exploitées et livrables 
-Python
-Data Visualisation
-Data Management
+# Objectif du projet
 
-## Galerie d’images
+L'observatoire de l'environnement a pour objectif de traduire l'état, les pressions, les réponses qui s'exercent sur l'environnement en Nouvelle Calédonie. Pour répondre à ces objectifs, nous collectons et analysons des données de suivi des milieux produites localement par les Collectivités, les miniers, Instituts de recherche, associations, entreprises, ainsi que des données produites mondialement comme celles obtenues par satellites d'observation de la terre:
+- l'occupation des sols et l'erosion, 
+- les incendies, 
+- les indicateurs de sécheresse végétale,
+- l'indicateur de pollution lumineuse
 
-{{< gallery >}}
-{{< /gallery >}}
+La quantité d'information disponible à analyser est massive et toujours en augmentation, on parle ainsi de Big data.
+Pour optimiser notre productivité dans nos suivis, nous cherchons à automatiser les traitements et la publication des informations sous un format décionnel. 
+
+# Problématiques principales
+## Relations spatiales
+Dans un projet Bi classic (non spatial), la valeur ajouté créée provient de croissement entre les données d'un modèle structuré par des relations entre les informations : des clés de référence.
+Dans notre cas la relation entre les informations et AUSSI spatiale, et cette spécificité implique des calculs plus lourd que des relations par clé.
+
+## SIG vers SID
+L'approche que nous avons suivi jusqu'à aujourd'hui consiste à transposer le modèle d'un Système d'information Géographique en Système d'information Décisionnelle, impliquant donc de définir quelles sont les faits et quelles sont les dimensions qui nous permettrons de répondre à la majorité de nos questions. 
+
+## Les faits
+Nos premiers résultats on aboutit à la production de données constituées des résultats d'intersection géographiques entre des pressions envirommentales (les surfaces brulées par exemple), des informations de contexte (les modes d'occupation du sol) et des informations de perimètres administratifs (les limites communales). Le résultat de ces découpages constitu notre DataWareHouse, qui permet de fournir des résultats aggregés selon nos dimensions temporelles, thematiques et surtout spatiales.
+
+Ce modèle n'est pas pleinement satisfaisant car il multiplie les croisements réaliser pour chacunes des  thématiques analysés. Les bases de données sont alourdies par une redondance d'information du fait notament de la nature des données inclusives selon les échelles étudiés (une région englobe +/- plusieurs communes). D'autre par l'heterogénéités de la précisions des données que nous croisons amène à produire parfois un pailletage des objets produisant des invalidités géometriques ou des incohérences sémantiques. 
+
+## Les DaTaMart (DTM)
+
+Ce sont les tables issu d´aggregation des fais selon les dimensions choisies. Ces tables sont ensuite utilisées pour produire des rapports, des cartes, des analyses statistiques. Ces tables sont produites par des scripts SQL, et sont stockées dans une base de données relationnelle. Les scripts SQL sont redondants et donc l'usage du framework DBT apporte une amelioration en terme de maintenabilité et de lisibilité des scripts.
+
+
+# Vers une approche plus performante
+
+Les effets de bord de notre approche actuelle m'ont amené à réfléchir à une approche plus performante, plus robuste et plus flexible. L'utilisation d'un index spatial léger et qui optimise les calculs de relations spatiales. L´article suivant présente cette approche : 
+
+[Indexer toute l'information environnementale sur une grille vectorielle H3]({{< relref "H3/index" >}})
