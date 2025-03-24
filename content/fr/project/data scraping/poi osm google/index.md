@@ -5,7 +5,7 @@ date: "2024-02-14T10:00:00+01:00"
 tags: ["gis", "scraping", "osm", "google maps", "postgis"]
 categories: ["scraping"]
 summary: "Phase 1: Extraire et structurer des points d’intérêt issus d’openstreetmap (OSM) et de Google maps"
-draft: false
+draft: true
 
 authors:
 - "Hugo Roussaffa"
@@ -13,62 +13,31 @@ authors:
 
 ---
 
-La phase 1 conciste á recolter des donnés disponibles. Je vais vous démontrer que le scraping de POI (extraction de données), est une démarche complète qui allie rigueur technique et créativité. Grâce à une gestion moderne du projet avec Poetry et à une documentation soignée via Quarto, il est aisé de reprendre ce projet, de l'adapter à d'autres territoires (comme l'Australie ou les Philippines) et de servir de base pour des analyses SIG avancées.
+Première phase concistant à recolter des donnés. Je vais vous démontrer que le scraping de POI (extraction de données), est une démarche complète qui allie rigueur technique et créativité. Grâce à une gestion moderne du projet avec Poetry et à une documentation soignée via Quarto, il est aisé de reprendre ce projet, de l'adapter à d'autres territoires (comme l'Australie ou les Philippines). Enfin ces données servirons de base à des analyses SIG avancées.
 
 
 
 ## Les points clés :
 
-- scraping et extraction : utilisation de l'Overpass api (OSM) et de Google Places API pour récupérer des données.
+- Scraping et extraction : utilisation de l'Overpass api (OSM) et de Google Places API pour récupérer des données.
 - gestion et traitement : manipulation avec Python, Pandas et Geopandas.
-- stockage spatial : insertion dans Postgis via Psycopg2.
+- stockage spatial : persistance des données dans un fichier GeoJson.
 - visualisation interactive : carte simple réalisée avec Folium.
 - environnement moderne : gestion des dépendances avec Poetry et rapport produit avec Quarto.
 
-Le rapport complet et interactif détail chaque étape et présente les résultats. Pour en savoir plus, consultez le rapport interactif détaillé via ce lien :
-
-[Consulter le rapport interactif complet](https://yougis.github.io/scraping-poi-osm-googlemap/scraping_osm.html) 
-
-Pour un apercu rapide du projet je vous propose de consulter le contenu du rapport intégré ci dessous:
+Le rapport complet et interactif détail chaque étape et présente les résultats. 
 
 <iframe src="https://yougis.github.io/scraping-poi-osm-googlemap/scraping_osm.html#fig-map-osm-hospitals" width="100%" height="600px"></iframe>
 
-## Exemple de cas d’usage addressés :
+## A quoi va servir ce projet :
 
 - L’analyse de la répartition des commerces et des services d'une ville ou un pays,
 - L’étude de la concurrence et des tendances du marché via des données spatialisées.
 
 ## Ce que vous allez découvrir :
-- **Comment je scrapes des POI** avec l'Overpass API d'OSM et la Google Places API.
-- **Je vais structurer et stocker les données** dans des fichiers CSV, Excel geoJson et même dans une base PostGIS 
-- **Vous permettre de visualiser mes résultats** sur une carte interactive grâce à Folium.
-- **Comment je gére tout cela d'un environnement de developpement à la production** avec Poetry, tester et documenter le tout.
 
 
-## Mes compétences en action
-
-Plusieurs compétences techniques sont déployées dans ce projet :
-
-1. **Scraping et extraction de données**
-   - **Overpass API (OSM)** : Extraire des données géospatiales en interrogeant l'API d'OpenStreetMap.
-   - **Google Places API** : Récupérer des informations complémentaires sur les POI en interrogeant l'API de google map.
-
-2. **Gestion et traitement de données**
-   - **Python & Requests** : Rédiger des scripts efficaces pour interroger les API.
-   - **Pandas & GeoPandas** : Manipuler et nettoyer les données obtenues.
-   - **JSON** : Structurer les réponses API de façon lisible et exploitable.
-
-3. **Visualisation interactive**
-   - **Folium** : Afficher les POI sur une carte interactive pour une visualisation immédiate.
-
-4. **Documentation**
-   - **Quarto** : Générer des rapports interactifs et bien documentés qui détaillent chaque étape du projet.
-
-5. **Gestion de l'environnement et du code source**
-   - **Poetry** : Simplifier la gestion des dépendances et la reproductibilité de l'environnement technique.
-   - **Git** : gérer et versionner le code source, ainsi que de mettre en place l'intégration continue avec l'usage des actions Github pour publier le site sur le serveur de production.
-
-## La démarche en 5 étapes
+### La démarche en 5 étapes
 
 ```mermaid
 flowchart TB
@@ -83,8 +52,46 @@ flowchart TB
     C --> D
     D --> E
 
-
 ```
+
+- **Comment je scrapes des POI** avec l'Overpass API d'OSM et la Google Places API.
+- **Je vais structurer et stocker les données** dans des fichiers geoJson. 
+- **Vous permettre de visualiser mes résultats** sur une carte interactive grâce à Folium.
+- **Comment je gére tout cela d'un environnement de developpement à la production** avec Poetry, teste et documente le tout.
+
+
+## Mes compétences en action
+
+Plusieurs compétences techniques sont exploités dans ce projet :
+
+1. **Scraping et extraction de données**
+   - **Overpass API (OSM)** : Extraire des données géospatiales en interrogeant l'API d'OpenStreetMap.
+   - **Google Places API** : Récupérer des informations complémentaires sur les POI en interrogeant l'API de google map.
+
+2. **Gestion et traitement de données**
+   - **Python & Requests** : Rédiger des scripts efficaces pour interroger les API.
+   - **Pandas & GeoPandas** : Manipuler et nettoyer les données obtenues.
+   - **JSON** : Structurer les réponses API de façon lisible et exploitable.
+
+3. **Visualisation interactive**
+   - **Folium** : Afficher les POI sur une carte interactive pour une visualisation immédiate.
+
+4. **Documentation**
+   - **Quarto** : Générer des rapports structurés, web et pdf qui détaillent chaque étape du projet.
+
+5. **Gestion de l'environnement et du code source**
+   - **Poetry** : Simplifie la gestion des dépendances et la reproductibilité de l'environnement technique.
+   - **Git** : gére et versionne le code source. Il permet aussi l'intégration continue avec l'usage des actions Github pour publier le site sur les serveurs de qulification/recette et de production.
+
+
+## Résultats
+
+
+[Consulter le rapport interactif complet](https://yougis.github.io/scraping-poi-osm-googlemap/scraping_osm.html) 
+
+Ce rapport est généré avec Quarto, un outil de documentation moderne qui permet de combiner du texte, du code et des visualisations dans un seul document. Il est interactif et vous permet de naviguer facilement entre les différentes sections.
+
+Le code source est disponible sur [Github](https://github.com/yougis/scraping-poi-osm-googlemap)
 
 ##  Perspectives
 

@@ -28,26 +28,31 @@ Analyse spatiale, simulation de parcours, Classification acendantes Hierarchique
 
 ## Galerie d’images
 
-{{< gallery >}}
-![Image 1](Atlas-du_Velib_images/atlas_velib_00.png)  
-![Image 2](Atlas-du_Velib_images/atlas_velib_01.png)  
-![Image 3](Atlas-du_Velib_images/atlas_velib_02.png)  
-![Image 4](Atlas-du_Velib_images/atlas_velib_03.png)  
-![Image 5](Atlas-du_Velib_images/atlas_velib_04.png)  
-![Image 8](Atlas-du_Velib_images/atlas_velib_07.png)  
-![Image 9](Atlas-du_Velib_images/atlas_velib_08.png)  
-![Image 10](Atlas-du_Velib_images/atlas_velib_09.png)  
-![Image 11](Atlas-du_Velib_images/atlas_velib_10.png)  
-![Image 12](Atlas-du_Velib_images/atlas_velib_11.png)  
-![Image 13](Atlas-du_Velib_images/atlas_velib_12.png)  
-![Image 14](Atlas-du_Velib_images/atlas_velib_13.png)  
+{{< gallery cols="3" >}}
+![Image 1](Atlas-du_Velib_images/atlas_velib_00.png)
+![Image 2](Atlas-du_Velib_images/atlas_velib_01.png)
+![Image 3](Atlas-du_Velib_images/atlas_velib_02.png)
+![Image 4](Atlas-du_Velib_images/atlas_velib_03.png)
+![Image 5](Atlas-du_Velib_images/atlas_velib_04.png)
+![Image 8](Atlas-du_Velib_images/atlas_velib_07.png)
+![Image 9](Atlas-du_Velib_images/atlas_velib_08.png)
+![Image 10](Atlas-du_Velib_images/atlas_velib_09.png)
+![Image 11](Atlas-du_Velib_images/atlas_velib_10.png) 
+![Image 12](Atlas-du_Velib_images/atlas_velib_11.png)
+![Image 13](Atlas-du_Velib_images/atlas_velib_12.png)
+![Image 14](Atlas-du_Velib_images/atlas_velib_13.png)
 {{< /gallery >}}
 
 
 
-## Compétences exploitées et livrables 
-Adobe illustrator
-QGIS
-Data Visualisation
-Data Management
-Analyse de données
+## Compétences exploitées
+- Adobe illustrator
+- QGIS
+- Data Visualisation
+- Data Management
+- Analyse de données
+- Statistiques multivariées
+- Classification ascendante hiérarchique
+- Cartographie
+- Maquette
+- Rédaction de textes
