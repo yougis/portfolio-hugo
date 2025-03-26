@@ -20,7 +20,7 @@ fr:
   menu:
     main:
       - name: Home
-        url: '/'
+        url: ''
         weight: 1
       - name: A propos
         url: 'about'
