@@ -28,7 +28,7 @@ date_format: Jan 2006
 
 item:
 
-  - certificate_url: /uploads/certificat/Angular.pdf
+  - certificate_url: uploads/certificat/Angular.pdf
     date_start: '2018-08-23'
     description: ''
     organization: IFAP
