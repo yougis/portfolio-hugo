@@ -6,7 +6,7 @@ title: Hugo Roussaffa
 superuser: true
 
 # Role/position
-role: 'Remote GIS expert'
+role: 'Expert SIG'
 
 # Status emoji
 status:
