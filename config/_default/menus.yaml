@@ -5,7 +5,7 @@
 
 main:
   - name: Home
-    url: /
+    url: url: "{{ "/" | absLangURL }}"
     weight: 10
   - name: Resume
     url: about/
