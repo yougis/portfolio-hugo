@@ -28,7 +28,7 @@ date_format: Jan 2006
 
 item:
 
-  - certificate_url: uploads/certificat/Angular.pdf
+  - certificate_url: /portfolio-hugo/uploads/certificat/Angular.pdf
     date_start: '2018-08-23'
     description: ''
     organization: IFAP
@@ -45,7 +45,7 @@ item:
       - Utiliser les routes
       - Utiliser les observables
 
-  - certificate_url: /uploads/certificat/ARCGIS  ADVANCE - GEODATABASE MULTI-USER.pdf
+  - certificate_url: /portfolio-hugo/uploads/certificat/ARCGIS  ADVANCE - GEODATABASE MULTI-USER.pdf
     date_start: '2013-11-06'
     description: ''
     organization: IFAP
@@ -53,7 +53,7 @@ item:
     title: ArcGIS - Géodatabase Multi-utilisateurs
     url: ''
 
-  - certificate_url: /uploads/certificat/ARCGIS  ADVANCE - SERVER.pdf
+  - certificate_url: /portfolio-hugo/uploads/certificat/ARCGIS  ADVANCE - SERVER.pdf
     date_start: '2013-11-21'
     description: ''
     organization: IFAP
@@ -61,7 +61,7 @@ item:
     title: ArcGIS - Introduction à ArcGIS for Server - Partie Web
     url: ''
 
-  - certificate_url: /uploads/certificat/ARCGIS Desktop - level 2.pdf
+  - certificate_url: /portfolio-hugo/uploads/certificat/ARCGIS Desktop - level 2.pdf
     date_start: '2014-08-25'
     description: ''
     organization: IFAP
@@ -69,7 +69,7 @@ item:
     title: ArcGIS 10.2 - Desktop - Niveau 2
     url: ''
 
-  - certificate_url: /uploads/certificat/Attestation PYTHON 10.2.pdf
+  - certificate_url: /portfolio-hugo/uploads/certificat/Attestation PYTHON 10.2.pdf
     date_start: '2014-08-25'
     description: ''
     organization: IFAP
@@ -78,7 +78,7 @@ item:
     url: ''
 
 
-  - certificate_url: /uploads/certificat/attestation formation ENSG photogrammetrie.pdf
+  - certificate_url: /portfolio-hugo/uploads/certificat/attestation formation ENSG photogrammetrie.pdf
     date_start: '2016-09-13'
     description: ''
     organization: ENSG
@@ -92,7 +92,7 @@ item:
       - Traiter les données photogrammétriques
 
 
-  - certificate_url: /uploads/certificat/attestation formation ENSG photogrammetrie-micmac.pdf
+  - certificate_url: /portfolio-hugo/uploads/certificat/attestation formation ENSG photogrammetrie-micmac.pdf
     date_start: '2016-06-21'
     description: ''
     organization: ENSG
@@ -109,7 +109,7 @@ item:
       - Orthophotographie
   
 
-  - certificate_url: ''
+  - certificate_url: '/portfolio-hugo/uploads/certificat/Attestations_de_formation_Docker.pdf'
     date_start: '2023-10-24'
     description: |-2
       Objectifs :
@@ -128,7 +128,7 @@ item:
     title: Docker
     url: ''
 
-  - certificate_url: /uploads/certificat/ConventionFormationSQL-18072022141759-0001.pdf
+  - certificate_url: /portfolio-hugo/uploads/certificat/ConventionFormationSQL-18072022141759-0001.pdf
     date_start: '2022-09-19'
     description: ''
     organization: IFAP
@@ -143,7 +143,7 @@ item:
       - Utiliser les aggregate functions
       - Combiner les données de plusieurs tables
 
-  - certificate_url: /uploads/certificat/ELK.pdf
+  - certificate_url: /portfolio-hugo/uploads/certificat/ELK.pdf
     date_start: '2018-08-29'
     description: ''
     organization: IFAP
@@ -159,7 +159,7 @@ item:
       - Créations de visualisations et de dashboards
 
 
-  - certificate_url: /uploads/certificat/Formation Tomcat.pdf
+  - certificate_url: /portfolio-hugo/uploads/certificat/Formation Tomcat.pdf
     date_start: '2012-11-02'
     description: ''
     organization: IFAP
@@ -175,7 +175,7 @@ item:
 
 
 
-  - certificate_url: /uploads/certificat/Java - Grails.pdf
+  - certificate_url: /portfolio-hugo/uploads/certificat/Java - Grails.pdf
     date_start: '2013-09-30'
     description: ''
     organization: IFAP
@@ -193,7 +193,7 @@ item:
       - Utiliser les tests unitaires
 
 
-  - certificate_url: /uploads/certificat/Télédétection.pdf
+  - certificate_url: /portfolio-hugo/uploads/certificat/Télédétection.pdf
     date_start: '2020-11-18'
     description: ''
     organization: IFAP
@@ -206,7 +206,7 @@ item:
       - Utiliser des outils de traitement d'image satellite Orfeo Toolbox et Snap
       - Deep learning avec classifiction random forest
 
-  - certificate_url: /uploads/certificat/Python perfectionnement.pdf
+  - certificate_url: /portfolio-hugo/uploads/certificat/Python perfectionnement.pdf
     date_start: '2020-09-09'
     description: ''
     organization: IFAP
@@ -226,7 +226,7 @@ item:
       - Utiliser les modules avancés
       - Déployer une application Flask et django
 
-  - certificate_url: /uploads/certificat/java ADVANCE Grails-gorm MODEL.pdf
+  - certificate_url: /portfolio-hugo/uploads/certificat/java ADVANCE Grails-gorm MODEL.pdf
     date_start: '2013-10-17'
     description: ''
     organization: IFAP
@@ -234,7 +234,7 @@ item:
     title: JAVA / SPÉCIFIQUE GRAILS / GORM AVANCÉ
     url: ''
 
-  - certificate_url: /uploads/certificat/Grails avancé.pdf
+  - certificate_url: /portfolio-hugo/uploads/certificat/Grails avancé.pdf
     date_start: '2019-06-05'
     description: ''
     organization: IFAP
@@ -243,7 +243,7 @@ item:
     url: ''
   
 
-  - certificate_url: /uploads/certificat/HTML5 CSS3 JAVASCRIPT.pdf
+  - certificate_url: /portfolio-hugo/uploads/certificat/HTML5 CSS3 JAVASCRIPT.pdf
     date_start: '2013-09-27'
     description: ''
     organization: IFAP
