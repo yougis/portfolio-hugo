@@ -28,7 +28,7 @@ content:
   filter_button:
     - name: All
       tag: '*'
-    - name: GIS
+    - name: SIG
       tag: GIS
     - name: Dashboard
       tag: Dashboard
@@ -38,7 +38,7 @@ content:
       tag: Rapport
     - name: Analyse spatiale
       tag:  Analyse spatiale
-    - name: Geoprocessing
+    - name: Geotraitement
       tag:  Geoprocessing
     - name: Database
       tag:  Database
