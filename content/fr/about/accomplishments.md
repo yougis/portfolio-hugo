@@ -27,6 +27,13 @@ date_format: Jan 2006
 
 
 item:
+  - certificate_url: /portfolio-hugo/uploads/certificat/co[ernicus/Certificate of Attendance CMEMS Essentials Session 1.pdf
+    date_start: '2025-04-01'
+    description: ''
+    organization: Copernicus Marine Essentials
+    organization_url: https://events.marine.copernicus.eu/copernicus-marine-essentials
+    title: Explore marine data
+    url: ''
 
   - certificate_url: /portfolio-hugo/uploads/certificat/Angular.pdf
     date_start: '2018-08-23'
