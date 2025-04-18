@@ -34,6 +34,13 @@ item:
     organization_url: https://events.marine.copernicus.eu/copernicus-marine-essentials
     title: Explore marine data
     url: ''
+  - certificate_url: /portfolio-hugo/uploads/certificat/co[ernicus/Certificate of Attendance CMEMS Essentials Session 2.pdf
+    date_start: '2025-04-15'
+    description: ''
+    organization: Copernicus Marine Essentials
+    organization_url: https://events.marine.copernicus.eu/copernicus-marine-essentials
+    title: Acces marine data
+    url: ''
 
   - certificate_url: /portfolio-hugo/uploads/certificat/Angular.pdf
     date_start: '2018-08-23'
