@@ -106,7 +106,7 @@ item:
       - Traiter les données photogrammétriques
 
 
-  - certificate_url: /portfolio-hugo/uploads/certificat/attestation formation ENSG photogrammetrie-micmac.png
+  - certificate_url: /portfolio-hugo/uploads/certificat/attestation formation ENSG photogrammetrie-micmac.jpg
     date_start: '2016-06-21'
     description: ''
     organization: ENSG
