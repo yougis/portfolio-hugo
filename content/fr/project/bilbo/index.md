@@ -16,7 +16,8 @@ authors:
 - "Developpeur et administrateur"
 ---
 
-
+#  Que signifie Bilbo ?
+Bilbo est l'accronyme de Buisness Intelligence for Land and Biodiversity Observation. C'est un projet de recherche et développement qui vise à développer des indicateurs pour l'observation de la terre.
 
 # Objectif du projet
 
@@ -25,17 +26,22 @@ L'observatoire de l'environnement a pour objectif de traduire l'état, les press
 - les incendies, 
 - les indicateurs de sécheresse végétale,
 - l'indicateur de pollution lumineuse
+- ...
 
 La quantité d'information disponible à analyser est massive et toujours en augmentation, on parle ainsi de Big data.
 Pour optimiser notre productivité dans nos suivis, nous cherchons à automatiser les traitements et la publication des informations sous un format décionnel. 
 
 # Problématiques principales
+
+## GeoTraitements lourds et longs
+
+
 ## Relations spatiales
 Dans un projet Bi classic (non spatial), la valeur ajouté créée provient de croissement entre les données d'un modèle structuré par des relations entre les informations : des clés de référence.
 Dans notre cas la relation entre les informations et AUSSI spatiale, et cette spécificité implique des calculs plus lourd que des relations par clé.
 
-## SIG vers SID
-L'approche que nous avons suivi jusqu'à aujourd'hui consiste à transposer le modèle d'un Système d'information Géographique en Système d'information Décisionnelle, impliquant donc de définir quelles sont les faits et quelles sont les dimensions qui nous permettrons de répondre à la majorité de nos questions. 
+## Du SIG vers un SID
+L'approche que nous avons suivi jusqu'à aujourd'hui consiste à transposer le modèle d'un Système d'information Géographique en Système d'Information Décisionnelle, impliquant donc de définir quelles sont les faits et quelles sont les dimensions qui nous permettrons de répondre à la toutes de nos questions. 
 
 ## Les faits
 Nos premiers résultats on aboutit à la production de données constituées des résultats d'intersection géographiques entre des pressions envirommentales (les surfaces brulées par exemple), des informations de contexte (les modes d'occupation du sol) et des informations de perimètres administratifs (les limites communales). Le résultat de ces découpages constitu notre DataWareHouse, qui permet de fournir des résultats aggregés selon nos dimensions temporelles, thematiques et surtout spatiales.
