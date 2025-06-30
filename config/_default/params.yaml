@@ -21,7 +21,6 @@ marketing:
     description: 'Portfolio made by Hugo Roussaffa about geomatic projets he made and wanting show you !'
     twitter: 'GetResearchDev'
   analytics:
-    google_analytics: ''
     baidu_tongji: ''
     google_tag_manager: ''
     microsoft_clarity: ''

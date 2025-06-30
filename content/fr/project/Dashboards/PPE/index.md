@@ -11,20 +11,76 @@ authors:
 - "Developpeur et administrateur"
 ---
 
-## Description du projet 
-
-This project aims to develop an interactive dashboard using the ESRI platform to visualize and analyze  environmental interest zones under pressure (gestion de l'eau
-, erosion, light pollution ..). Theses dashboards will integrate many detailed spatial data from plenty of data sources.
-        
+### 📝 Projet de suivi de la ressource en eau potable en Nouvelle-Calédonie
 
 
-## Compétences exploitées et livrables 
-ArcGIS Online
-ArcGIS
+**Contexte :**
+Dans le cadre de mes fonctions au sein d’une association environnementale, j’ai assuré la responsabilité du pôle système d’information et projets géomatique. Une mission simple m'a été confié pour concevoir un **tableau de bord territorial de suivi de la ressource en eau potable** à l’échelle de la Nouvelle-Calédonie, à destination d'une institution publique (DAVAR).
+
+**Objectifs :**
+
+* Identifier, formaliser et produire une dizaine d’**indicateurs géographiques** pertinents pour le suivi de la ressource.
+* Construire une **solution technique pérenne et reproductible**, évolutive à long terme.
+* Automatiser le traitement et l’agrégation des données géographiques vectorielles (fournies par le commanditaire).
+
+**Rôle et actions :**
+
+* Conception et **développement d’un framework de traitements géospatiaux scriptés** (Python/GDAL, YAML), avec des étapes de croisement géométrique, filtrage, agrégation, etc.
+* Structuration des données selon une logique **bronze / argent / or** (modèle de Data Lakehouse adapté aux données géographiques).
+* Mise en place d’un **catalogue de données** et de modèles standardisés pour faciliter l’analyse multi-échelles.
+* Refus explicite des traitements manuels (type QGIS), au profit d’un système **industrialisé, reproductible et documenté**.
+* Dialogue constant avec les partenaires publics pour affiner les indicateurs et anticiper les usages futurs, applicant ainsi une approche agile.
+
+**Résultats et impacts :**
+
+* Livraison réussie de la première version du tableau de bord et des indicateurs.
+* **Adoption du framework comme socle technique pour l’ensemble des projets environnementaux** future de l’observatoire.
+* Gain de temps significatif dans les projets ultérieurs et meilleure fiabilité des traitements.
+* Structuration d’une **culture de traitement automatisé et maintenable** au sein de l’équipe.
+
+**Enseignements :**
+
+* L’importance d’imposer une **vision technique claire et robuste**, même lorsqu’elle diverge des pratiques en place.
+* La **pédagogie** et la formation est un facteur clé pour faire adhérer les équipes à des outils techniques plus avancés.
+* Un choix méthodologique assumé peut générer **un effet levier durable** à l’échelle d’une organisation.
+
+
+## Compétences exploitées
+
+{{< skills >}}
 Data Visualisation
 Data Management
+Python Development
+Data Automation
+Data Lakehouse
+Data Processing
+Data Analysis
+Data Engineering
+{{< /skills >}}
 
-## Galerie d’images
+
+## Technologies utilisées
+
+{{< technologies >}}
+Python
+GDAL
+YAML
+DBT
+ArcGIS Online
+ArcGIS
+{{< /technologies >}}
+
+
+{{< pylib>}}
+Pandas
+rasterio
+geopandas
+intake
+Dask
+{{< /pylib>}}
+
+
+## Galerie d’images 
 
 {{< gallery >}}
 {{< /gallery >}}

@@ -181,3 +181,38 @@ ul.network-icon .big-icon {
     grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
   }
 }
+
+
+// Custom styles for the skills and technologies sections
+
+
+.skills {
+  /* Your styling for skills goes here */
+  list-style: none;
+  padding-left: 0;
+}
+
+.skills li:before {
+  content: "✨ "; /* Example: add a little sparkle before each skill */
+}
+
+.technologies {
+  /* Your styling for technologies */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.technologies div {
+  background-color: #f0f0f0;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.python-libraries {
+  /* Your styling for Python libraries */
+  font-family: monospace;
+  background-color: #eee;
+  padding: 15px;
+  border-left: 3px solid #007bff;
+}

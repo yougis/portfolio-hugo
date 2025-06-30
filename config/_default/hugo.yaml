@@ -32,8 +32,7 @@ removePathAccents: true
 ############################
 ## ADVANCED
 ############################
-
-enableGitInfo: false
+enablesGitInfo: false
 summaryLength: 30
 pagination:
   pagerSize: 10
