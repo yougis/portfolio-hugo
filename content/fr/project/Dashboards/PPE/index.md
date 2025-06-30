@@ -48,26 +48,40 @@ Dans le cadre de mes fonctions au sein d’une association environnementale, j�
 ## Compétences exploitées
 
 {{< skills >}}
-Data Visualisation
-Data Management
-Python Development
-Data Automation
-Data Lakehouse
-Data Processing
-Data Analysis
-Data Engineering
+- name: Data Visualisation
+  icon: fas fa-chart-pie # Exemple Font Awesome pour graphique
+- name: Data Management
+  icon: fas fa-database
+- name: Python Development
+  icon: fab fa-python
+- name: Data Automation
+  icon: fas fa-robot
+- name: Data Lakehouse
+  icon: fas fa-water
+- name: Data Processing
+  icon: fas fa-cogs
+- name: Data Analysis
+  icon: fas fa-search
+- name: Data Engineering
+  icon: fas fa-wrench
 {{< /skills >}}
 
 
 ## Technologies utilisées
 
 {{< technologies >}}
-Python
-GDAL
-YAML
-DBT
-ArcGIS Online
-ArcGIS
+- name: Python
+  icon: fab fa-python
+- name: GDAL
+  icon: fas fa-map-marked-alt
+- name: YAML
+  icon: fas fa-file-alt
+- name: DBT
+  icon: fas fa-server
+- name: ArcGIS Online
+  icon: fas fa-cloud
+- name: ArcGIS
+  icon: fas fa-globe-americas
 {{< /technologies >}}
 
 
@@ -80,7 +94,3 @@ Dask
 {{< /pylib>}}
 
 
-## Galerie d’images 
-
-{{< gallery >}}
-{{< /gallery >}}

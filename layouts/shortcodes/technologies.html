@@ -1,3 +1,8 @@
-<div class="technologies">
-  {{ .Inner | markdownify }}
+<div class="techno-cards">
+  {{ range .Inner | transform.Unmarshal | default (slice) }}
+    <div class="techno-card">
+      {{ if .icon }}<div class="techno-icon"><i class="{{ .icon }}"></i></div>{{ end }}
+      <h3 class="techno-name">{{ .name }}</h3>
+    </div>
+  {{ end }}
 </div>

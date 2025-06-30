@@ -1,3 +1,13 @@
-<div class="pylib">
-  {{ .Inner | markdownify }}
+<div class="python-libs-list">
+  <h3 class="list-title">Bibliothèques Python</h3>
+  <ul>
+    {{ range .Inner | transform.Unmarshal | default (slice) }}
+      <li>
+        <div class="lib-item">
+          <span class="lib-name">{{ .name }}</span>
+          {{ if .description }}<p class="lib-description">{{ .description }}</p>{{ end }}
+        </div>
+      </li>
+    {{ end }}
+  </ul>
 </div>

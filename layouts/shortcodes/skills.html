@@ -1,3 +1,8 @@
-<div class="skills">
-  {{ .Inner | markdownify }}
+<div class="skills-grid">
+  {{ range .Inner | transform.Unmarshal | default (slice) }}
+    <div class="skill-item">
+      {{ if .icon }}<i class="{{ .icon }}"></i>{{ end }}
+      <span>{{ .name }}</span>
+    </div>
+  {{ end }}
 </div>
