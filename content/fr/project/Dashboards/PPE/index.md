@@ -86,11 +86,16 @@ Dans le cadre de mes fonctions au sein d’une association environnementale, j�
 
 
 {{< pylib>}}
-Pandas
-rasterio
-geopandas
-intake
-Dask
+- name: Pandas
+  description: Bibliothèque pour la manipulation et l'analyse de données.
+- name: rasterio
+  description: Lecture et écriture de données raster géospatiales.
+- name: geopandas
+  description: Extension de Pandas pour travailler avec des données géospatiales.
+- name: intake
+  description: Découverte, gestion et accès aux données.
+- name: Dask
+  description: Traitement parallèle de données à grande échelle.
 {{< /pylib>}}
 
 
