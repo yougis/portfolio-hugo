@@ -47,7 +47,7 @@ Dans le cadre de mes fonctions au sein d’une association environnementale, j�
 
 ## Compétences exploitées
 
-{{< skills >}}
+{{< skills-grid >}}
 - name: Data Visualisation
   icon: fas fa-chart-pie # Exemple Font Awesome pour graphique
 - name: Data Management
@@ -64,12 +64,12 @@ Dans le cadre de mes fonctions au sein d’une association environnementale, j�
   icon: fas fa-search
 - name: Data Engineering
   icon: fas fa-wrench
-{{< /skills >}}
+{{< /skills-grid >}}
 
 
 ## Technologies utilisées
 
-{{< technologies >}}
+{{< techno-cards >}}
 - name: Python
   icon: fab fa-python
 - name: GDAL
@@ -82,10 +82,10 @@ Dans le cadre de mes fonctions au sein d’une association environnementale, j�
   icon: fas fa-cloud
 - name: ArcGIS
   icon: fas fa-globe-americas
-{{< /technologies >}}
+{{< /techno-cards >}}
 
 
-{{< pylib>}}
+{{< python-libs-list>}}
 - name: Pandas
   description: Bibliothèque pour la manipulation et l'analyse de données.
 - name: rasterio
@@ -96,6 +96,6 @@ Dans le cadre de mes fonctions au sein d’une association environnementale, j�
   description: Découverte, gestion et accès aux données.
 - name: Dask
   description: Traitement parallèle de données à grande échelle.
-{{< /pylib>}}
+{{< /python-libs-list>}}
 
 
