@@ -285,6 +285,13 @@ ul.network-icon .big-icon {
     border-radius: 5px;
     margin-bottom: 20px;
   }
+.dark .python-libs-list {
+    background-color: rgb(31, 39, 51); /* Fond clair pour le bloc */
+    border-left: 5px solid #ffc107; /* Bande latérale jaune pour accent */
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
 
   .python-libs-list .list-title {
     color: #212529;
@@ -319,7 +326,15 @@ ul.network-icon .big-icon {
 
   .lib-name {
     font-weight: bold;
-    color: #0056b3; /* Bleu pour le nom de la bibliothèque */
+    color: #4d77a5; /* Bleu pour le nom de la bibliothèque */
+    font-size: 1.1em;
+    display: block; /* S'assure que la description va à la ligne */
+    margin-bottom: 5px;
+  }
+
+   .dark .lib-name {
+    font-weight: bold;
+    color: #98b3cf; /* Bleu pour le nom de la bibliothèque */
     font-size: 1.1em;
     display: block; /* S'assure que la description va à la ligne */
     margin-bottom: 5px;
