@@ -194,7 +194,20 @@ ul.network-icon .big-icon {
  }
  .skill-item {
    background-color: #e0f2f7; /* Couleur de fond douce */
-   color: #007bff; /* Couleur du texte/icône */
+   color: #4d729b; /* Couleur du texte/icône */
+   border-radius: 20px; /* Coins arrondis pour un look de bulle */
+   padding: 8px 15px;
+   display: flex;
+   align-items: center;
+   font-size: 0.95em;
+   font-weight: bold;
+   box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Légère ombre */
+   transition: transform 0.2s ease-in-out;
+ }
+
+ .dark .skill-item {
+   background-color: rgb(31, 39, 51); /* Couleur de fond douce */
+   color: #8fa1b4; /* Couleur du texte/icône */
    border-radius: 20px; /* Coins arrondis pour un look de bulle */
    padding: 8px 15px;
    display: flex;
@@ -214,16 +227,33 @@ ul.network-icon .big-icon {
  }
  
 
-   /* CSS pour le shortcode techno */
-  .techno-cards {
+.techno-cards {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Colonnes responsives */
+    gap: 20px; /* Espace entre les cartes */
+    padding: 20px 0;
+  }
+   /* CSS pour le shortcode techno */
+.dark .techno-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Colonnes responsives */
+    background-color: rgb(31, 39, 51);
     gap: 20px; /* Espace entre les cartes */
     padding: 20px 0;
   }
 
   .techno-card {
     background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+
+ .dark  .techno-card {
+    background-color: rgb(31, 39, 51);
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 20px;
@@ -276,6 +306,12 @@ ul.network-icon .big-icon {
 
   .lib-item {
     background-color: #fff;
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  .dark .lib-item {
+    background-color: rgb(31, 39, 51);
     padding: 15px;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
