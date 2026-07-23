@@ -27,14 +27,14 @@ jobs:
       - name: Build site
         run: hugo --minify
 
-      # 4. Envoi du dossier 'public/' généré vers le NAS Synology
-      - name: Deploy to Synology NAS via Rsync
+      - name: Déploiement Rsync vers le NAS
         uses: easingthemes/ssh-deploy@main
         with:
-          SSH_PRIVATE_KEY: ${{ secrets.NAS_SSH_KEY }}
-          ARGS: "-rltgoDzv --delete"
-          REMOTE_HOST: ${{ secrets.NAS_HOST }}
-          REMOTE_PORT: ${{ secrets.NAS_PORT }}
-          REMOTE_USER: ${{ secrets.NAS_USER }}
+          SSH_PRIVATE_KEY: ${{ secrets.NAS_SSH_PRIVATE_KEY }}
+          REMOTE_HOST: "rouyre.familyds.org"
+          REMOTE_USER: ${{ secrets.NAS_USERNAME }}
+          REMOTE_PORT: "22"
+          TARGET: "/volume1/web/"
           SOURCE: "public/"
+          ARGS: "-rlptgoDzc --delete"      # 4. Envoi du dossier 'public/' généré vers le NAS Synology
           TARGET: ${{ secrets.NAS_TARGET_DIR }}
