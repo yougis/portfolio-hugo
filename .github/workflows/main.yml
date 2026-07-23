@@ -1,0 +1,40 @@
+name: Deploy Hugo site to Synology NAS
+
+on:
+  push:
+    branches:
+      - main # ou master selon votre branche principale
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. Récupération du code source
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: true  # Si vous utilisez un thème Hugo en sous-module
+          fetch-depth: 0
+
+      # 2. Installation de Hugo
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: 'latest'
+          extended: true
+
+      # 3. Compilation du site en HTML statique
+      - name: Build site
+        run: hugo --minify
+
+      # 4. Envoi du dossier 'public/' généré vers le NAS Synology
+      - name: Deploy to Synology NAS via Rsync
+        uses: easingthemes/ssh-deploy@main
+        with:
+          SSH_PRIVATE_KEY: ${{ secrets.NAS_SSH_KEY }}
+          ARGS: "-rltgoDzv --delete"
+          REMOTE_HOST: ${{ secrets.NAS_HOST }}
+          REMOTE_PORT: ${{ secrets.NAS_PORT }}
+          REMOTE_USER: ${{ secrets.NAS_USER }}
+          SOURCE: "public/"
+          TARGET: ${{ secrets.NAS_TARGET_DIR }}
