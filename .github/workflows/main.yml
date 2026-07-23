@@ -30,11 +30,10 @@ jobs:
       - name: Déploiement Rsync vers le NAS
         uses: easingthemes/ssh-deploy@main
         with:
-          SSH_PRIVATE_KEY: ${{ secrets.NAS_SSH_PRIVATE_KEY }}
+          NAS_SSH__KEY: ${{ secrets.NAS_SSH_PRIVATE_KEY }}
           REMOTE_HOST: "rouyre.familyds.org"
-          REMOTE_USER: ${{ secrets.NAS_USERNAME }}
+          NAS_USER: ${{ secrets.NAS_USERNAME }}
           REMOTE_PORT: "22"
           TARGET: "/volume1/web/"
           SOURCE: "public/"
-          ARGS: "-rlptgoDzc --delete"      # 4. Envoi du dossier 'public/' généré vers le NAS Synology
-          TARGET: ${{ secrets.NAS_TARGET_DIR }}
+          ARGS: "-rlptgoDzc --delete"
