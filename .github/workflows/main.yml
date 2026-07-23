@@ -34,7 +34,7 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           REMOTE_HOST: "rouyre.familyds.org"
           REMOTE_USER: ${{ secrets.NAS_USER }}
-          REMOTE_PORT: "22"
+          REMOTE_PORT: ${{ secrets.NAS_PORT }}
           TARGET: "/volume1/web/"
           SOURCE: "public/"
           ARGS: "-rlptgoDzc --delete"
