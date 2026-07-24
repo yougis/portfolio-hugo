@@ -27,14 +27,22 @@ jobs:
       # 3. Compilation du site en HTML statique
       - name: Build site
         run: hugo --minify
+# Connexion au réseau VPN via Tailscale
+      - name: Connect to Tailscale VPN
+        uses: tailscale/github-action@v2
+        with:
+          oauth-client-id: ${{ secrets.TS_OAUTH_CLIENT_ID }} # ou authkey
+          oauth-secret: ${{ secrets.TS_OAUTH_SECRET }}
+          tags: tag:ci
 
-      - name: Déploiement Rsync vers le NAS
+      # Déploiement Rsync standard (qui passe maintenant par le VPN)
+      - name: Deploy to Synology NAS via Rsync
         uses: easingthemes/ssh-deploy@main
         with:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          REMOTE_HOST: "rouyre.familyds.org"
-          REMOTE_USER: ${{ secrets.NAS_USER }}
+          SSH_PRIVATE_KEY: ${{ secrets.NAS_SSH_KEY }}
+          REMOTE_HOST: ${{ secrets.NAS_HOST }} # L'IP 100.x.y.z du NAS
           REMOTE_PORT: ${{ secrets.NAS_PORT }}
-          TARGET: "/volume1/web/"
+          REMOTE_USER: ${{ secrets.NAS_USER }}
           SOURCE: "public/"
-          ARGS: "-rlptgoDzc --delete"
+          TARGET: ${{ secrets.NAS_TARGET_DIR }}
+          ARGS: "-rltgoDzv --delete"
