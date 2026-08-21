@@ -11,18 +11,15 @@ authors:
 - "Developpeur et administrateur"
 ---
 
-## Description du projet 
+## Description du projet
 
-This project aims to develop an interactive dashboard using the ESRI platform to visualize and analyze  environmental interest zones under pressure (wildfire
-, erosion, light pollution ..). Theses dashboards will integrate many detailed spatial data from plenty of data sources.
-        
+Ce projet vise à développer un tableau de bord interactif sur la plateforme ESRI pour visualiser et analyser les zones d'intérêt environnemental sous pression (incendies, érosion, pollution lumineuse, etc.). Ces tableaux de bord intègrent de nombreuses données spatiales détaillées issues de multiples sources de données.
 
-
-## Compétences exploitées et livrables 
-ArcGIS Online
-ArcGIS
-Data Visualisation
-Data Management
+## Compétences exploitées et livrables
+- ArcGIS Online
+- ArcGIS
+- Data Visualisation
+- Data Management
 
 ## Galerie d’images
 

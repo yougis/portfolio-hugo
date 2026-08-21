@@ -37,11 +37,11 @@ content:
     - name: Rapport
       tag: Rapport
     - name: Analyse spatiale
-      tag:  Analyse spatiale
+      tag: Analyse spatiale
     - name: Geotraitement
-      tag:  Geoprocessing
-    - name: Database
-      tag:  Database
+      tag: Geoprocessing
+    - name: Science
+      tag: Science
 
 
 

@@ -23,18 +23,18 @@ date_format: Jan 2006
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
   - title: Level 7 - [Master's degree](http://en.wikipedia.org/wiki/Master%27s_degree#Comparable_European_degrees) 
-    institution: University Paris 7, Paris 1 Sorbonne & ENSG
-    institution_url: ''
-    institution_logo: 
+    company: University Paris 7, Paris 1 Sorbonne & ENSG
+    company_url: ''
+    company_logo: 
     location: Paris
     date_start: '2009-01-01'
     date_end: '2011-12-31'
     description: Master's program in Geomatics, received "Mention Bien" (Good). 
 
   - title: Bachelor's in Geography
-    institution: University Poitiers & Paris 7 Diderot
-    institution_url: ''
-    institution_logo: 
+    company: University Poitiers & Paris 7 Diderot
+    company_url: ''
+    company_logo: 
     location: Poitiers, Paris
     date_start: '2005-01-01'
     date_end: '2008-12-31'
@@ -44,4 +44,3 @@ experience:
 design:
   columns: '1'
 ---
-

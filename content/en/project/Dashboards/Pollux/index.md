@@ -1,6 +1,6 @@
 ---
-title: Dashboard ESRI / Pollution lumineuse
-summary: Réalisation d'un dashboard avec Arcgis Online à propos de la pollution lumineuse en Nouvelle-Calédonie
+title: ESRI Dashboard / Light pollution
+summary: Building a dashboard with ArcGIS Online about light pollution in New Caledonia
 
 tags:
   - Dashboard

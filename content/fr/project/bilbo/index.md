@@ -9,8 +9,6 @@ tags:
   - dataviz
   - geoprocessing
 
-date: 2022-01-01
-
 authors:
 - "Hugo Roussaffa"
 - "Developpeur et administrateur"

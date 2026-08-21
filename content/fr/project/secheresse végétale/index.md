@@ -1,6 +1,6 @@
 ---
 title: Suivi de la sécheresse végétale par télédétection
-summary: Mise en place d'ne chaîne de traitement pour le suivi de la sécheresse végétale par télédétection
+summary: Mise en place d'une chaîne de traitement pour le suivi de la sécheresse végétale par télédétection
 tags:
   - Télédétection
   - Rapport

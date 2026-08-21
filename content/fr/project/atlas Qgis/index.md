@@ -14,17 +14,16 @@ authors:
 - "Developpeur et administrateur"
 ---
 
-## Description du projet 
+## Description du projet
 
-This project aims to develop an interactive dashboard using the ESRI platform to visualize and analyze  environmental interest zones under pressure (gestion de l'eau
-, erosion, light pollution ..). Theses dashboards will integrate many detailed spatial data from plenty of data sources.
-        
+Réalisation d'un atlas cartographique complexe avec QGIS, retraçant l'historique des incendies dans chaque commune de Nouvelle-Calédonie sur les 20 dernières années. L'atlas combine des données d'occupation du sol, des périmètres administratifs et des historiques de feux pour produire une série de planches cartographiques homogènes et reproductibles.
 
+La chaîne de production repose sur le générateur d'atlas de QGIS : un modèle de composition unique, paramétré par commune, permet de générer automatiquement l'ensemble des planches. Chaque planche intègre les cartes, les statistiques communales et les éléments de légende nécessaires à la lecture des dynamiques d'incendie.
 
-## Compétences exploitées et livrables 
-QGIS
-Data Visualisation
-Data Management
+## Compétences exploitées et livrables
+- QGIS
+- Data Visualisation
+- Data Management
 
 ## Galerie d’images
 

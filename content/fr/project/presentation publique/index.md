@@ -18,3 +18,7 @@ authors:
 
 
 [Cluster OPenNC](https://neotech.nc/open-nc-x-open-data-un-combo-gagnant/EN)
+
+## Support de présentation
+
+[Télécharger le support (PDF)](club_geo_nc/Club_Geomatique_2023_1_03_Hugo_Roussaffa_projets_OEIL.pdf)

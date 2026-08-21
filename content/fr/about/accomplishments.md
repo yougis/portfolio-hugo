@@ -27,14 +27,14 @@ date_format: Jan 2006
 
 
 item:
-  - certificate_url: /portfolio-hugo/uploads/certificat/co[ernicus/Certificate of Attendance CMEMS Essentials Session 1.pdf
+  - certificate_url: /portfolio-hugo/uploads/certificat/Copernicus/Certificate of Attendance CMEMS Essentials Session 1.pdf
     date_start: '2025-04-01'
     description: ''
     organization: Copernicus Marine Essentials
     organization_url: https://events.marine.copernicus.eu/copernicus-marine-essentials
     title: Explore marine data
     url: ''
-  - certificate_url: /portfolio-hugo/uploads/certificat/co[ernicus/Certificate of Attendance CMEMS Essentials Session 2.pdf
+  - certificate_url: /portfolio-hugo/uploads/certificat/Copernicus/Certificate of Attendance CMEMS Essentials Session 2.pdf
     date_start: '2025-04-15'
     description: ''
     organization: Copernicus Marine Essentials
@@ -44,7 +44,6 @@ item:
 
   - certificate_url: /portfolio-hugo/uploads/certificat/Angular.pdf
     date_start: '2018-08-23'
-    description: ''
     organization: IFAP
     organization_url: https://www.ifap.nc
     title: Angular V5 
@@ -94,7 +93,6 @@ item:
 
   - certificate_url: /portfolio-hugo/uploads/certificat/attestation formation ENSG photogrammetrie.pdf
     date_start: '2016-09-13'
-    description: ''
     organization: ENSG
     organization_url: https://www.ensg.eu/fr
     title: Production photogrametrique rapprochée - 3D
@@ -108,7 +106,6 @@ item:
 
   - certificate_url: /portfolio-hugo/uploads/certificat/attestation formation ENSG photogrammetrie-micmac.jpg
     date_start: '2016-06-21'
-    description: ''
     organization: ENSG
     organization_url: https://www.ensg.eu/fr
     title: Micmac - Traitement de données photogrammétriques - 3D 
@@ -144,7 +141,6 @@ item:
 
   - certificate_url: /portfolio-hugo/uploads/certificat/ConventionFormationSQL-18072022141759-0001.pdf
     date_start: '2022-09-19'
-    description: ''
     organization: IFAP
     organization_url: https://www.ifap.nc
     title: Base de données et langage SQL pour développeurs
@@ -159,7 +155,6 @@ item:
 
   - certificate_url: /portfolio-hugo/uploads/certificat/ELK.pdf
     date_start: '2018-08-29'
-    description: ''
     organization: IFAP
     organization_url: https://www.ifap.nc
     title: ELASTIC STACK (ELK - ELASTICSEARCH, LOGSTASH ET KIBANA)
@@ -175,7 +170,6 @@ item:
 
   - certificate_url: /portfolio-hugo/uploads/certificat/Formation Tomcat.pdf
     date_start: '2012-11-02'
-    description: ''
     organization: IFAP
     organization_url: https://www.ifap.nc
     title: Administration Tomcat
@@ -191,7 +185,6 @@ item:
 
   - certificate_url: /portfolio-hugo/uploads/certificat/Java - Grails.pdf
     date_start: '2013-09-30'
-    description: ''
     organization: IFAP
     organization_url: https://www.ifap.nc
     title: JAVA / Grails
@@ -209,7 +202,6 @@ item:
 
   - certificate_url: /portfolio-hugo/uploads/certificat/Télédétection.pdf
     date_start: '2020-11-18'
-    description: ''
     organization: IFAP
     organization_url: https://www.ifap.nc
     title: SIG - TÉLÉDÉTECTION DE TRAITEMENT D'IMAGE SATELLITE
@@ -222,7 +214,6 @@ item:
 
   - certificate_url: /portfolio-hugo/uploads/certificat/Python perfectionnement.pdf
     date_start: '2020-09-09'
-    description: ''
     organization: IFAP
     organization_url: https://www.ifap.nc
     title: PYTHON NIV.3 - PERFECTIONNEMENT

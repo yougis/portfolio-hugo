@@ -1,47 +1,54 @@
 ---
-title: Indexer toute l'information environnementale sur une grille vectorielle H3
-summary: 
-
+title: Large-scale environmental geoprocessing and spatial analysis
+summary: Streamlining the production of environmental indicators
 tags:
   - Science
   - dataviz
   - geoprocessing
-
 date: 2022-01-01
-
 authors:
 - "Hugo Roussaffa"
 - "Developpeur et administrateur"
 ---
 
-## Description du projet 
+# What does Bilbo mean?
+Bilbo stands for **Business Intelligence for Land and Biodiversity Observation**. It is a research and development project aimed at developing indicators for Earth observation.
 
-Notre projet consiste à créer un système d'information décisionnel basé sur des données géographiques et environnementales. Il à pour vocation à exploiter des données sur les incendies, l'occupation des sols, les limites administratives et des indicateurs de sécheresse et de pollution lumineuse etc. Les données seront indexées sur une grille H3 pour une analyse spatiale fine. Les traitements seront réalisés à l'aide d'algorithmes Python et les datamarts seront générés à l'aide de DBT, un générateur SQL basé sur les templates Jinja.
+# Project objective
 
-Notre projet se distingue des projets de business intelligence standard par sa capacité à intégrer des données géographiques et environnementales, à effectuer une analyse spatiale fine grâce à l'indexation H3 et à être flexible pour répondre aux besoins spécifiques.
+The environmental observatory's goal is to translate the state, pressures and responses affecting the environment in New Caledonia. To meet these objectives, we collect and analyze environmental monitoring data produced locally by local authorities, mining companies, research institutes, associations and businesses, as well as data produced worldwide, such as that obtained from Earth observation satellites:
+- land cover and erosion,
+- wildfires,
+- vegetation drought indicators,
+- the light pollution indicator
+- ...
 
-H3 est un système d'indexation spatiale hexagonale développé par Uber, qui permet de diviser la surface de la Terre en une grille de hexagones de tailles variables. Il est particulièrement utile pour l'analyse spatiale fine des données, car il permet de stocker les données à différents niveaux de granularité.
+The amount of information to be analyzed is massive and constantly growing — this is Big Data.
+To optimize our productivity in monitoring, we aim to automate processing and the publication of information in a decision-ready format.
 
-Les avantages d'utiliser H3 par rapport à un système d'information géographique standard sont nombreux:
+# Main challenges
 
-- Il permet d'adapter la finesse de l'analyse spatiale des données, car il permet de stocker les données à différents niveaux de granularité spatiale.
--  Il est également plus efficace en termes de stockage de données, car il permet de stocker des données de différentes tailles dans une seule grille.
--  Il est facilement utilisable avec des outils de visualisation tels que des tableaux de bord géographiques, permettant une meilleure compréhension des données pour les utilisateurs.
-	
-
-En utilisant H3, nous pouvons mieux comprendre les risques liés aux incendies, la sécheresse et la pollution lumineuse. L'indexation H3 permet une analyse spatiale fine des données, cela signifie que nous pouvons identifier les zones les plus touchées par la sécheresse ou la pollution lumineuse avec une précision accrue.
-
-DBT est un outil clé pour notre projet car il nous permet de générer des datamarts à partir de nos données. Il utilise des templates Jinja pour générer des requêtes SQL qui peuvent être utilisées pour créer des tableaux de bord géographiques et des rapports automatisés. Cela permet une meilleure compréhension des données pour les utilisateurs et une prise de décision plus efficace.
-
-En résumé, notre projet est basé sur l'utilisation de données géographiques et environnementales, l'analyse spatiale fine grâce à l'indexation H3 et la flexibilité pour répondre aux besoins spécifiques en utilisant DBT pour générer des datamarts et des tableaux de bord géographiques et des rapports automatisés.
+## Heavy, time-consuming geoprocessing
 
 
-## Compétences exploitées et livrables 
-Python
-Data Visualisation
-Data Management
+## Spatial relationships
+In a classic (non-spatial) BI project, the added value comes from crossing data in a model structured by relationships between information: reference keys.
+In our case, the relationship between information is ALSO spatial, and this specificity implies heavier calculations than key-based relationships.
 
-## Galerie d’images
+## From GIS to a decision support system
+The approach we have followed so far consists of transposing the model of a Geographic Information System into a Decision Support System, which means defining which facts and which dimensions will allow us to answer all our questions.
 
-{{< gallery >}}
-{{< /gallery >}}
+## The facts
+Our first results led to the production of data made up of the results of geographic intersections between environmental pressures (burned areas, for example), context information (land cover types) and administrative perimeter information (municipal boundaries). The result of these divisions constitutes our DataWareHouse, which provides aggregated results according to our temporal, thematic and above all spatial dimensions.
+
+This model is not fully satisfactory because it multiplies the crossings performed for each of the themes analyzed. Databases are weighed down by redundant information, notably due to the inclusive nature of the data depending on the scales studied (a region encompasses +/- several municipalities). Moreover, the heterogeneity of the precision of the data we cross sometimes leads to a patchwork of objects producing geometric invalidities or semantic inconsistencies.
+
+## The DataMarts (DTM)
+
+These are the tables resulting from the aggregation of facts according to the chosen dimensions. These tables are then used to produce reports, maps and statistical analyses. They are produced by SQL scripts and stored in a relational database. The SQL scripts are redundant, so the use of the DBT framework brings an improvement in terms of maintainability and readability of the scripts.
+
+# Towards a more efficient approach
+
+The side effects of our current approach led me to think about a more efficient, more robust and more flexible approach: the use of a lightweight spatial index that optimizes spatial relationship calculations. The following article presents this approach:
+
+[Indexing all environmental information on an H3 vector grid]({{< relref "H3/index" >}})

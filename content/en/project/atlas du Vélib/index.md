@@ -1,9 +1,11 @@
 ---
 title: Atlas du Vélib
-summary: Atlas cartographique et statistique
+summary: Cartographic and statistical atlas
 
 tags:
-  - GIS
+  - Map
+  - Atlas
+  - Analyse spatiale
 date: 2010-01-01
 
 authors:

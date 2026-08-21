@@ -36,6 +36,18 @@ experience:
         * Analyzing needs and drafting technical specifications
         * Promoting and communicating the activities of the department
 
+  - title: Adjunct Lecturer in GIS
+    company: University of New Caledonia
+    company_url: ''
+    company_logo: UNC_160
+    location: New Caledonia
+    date_start: '2020-06-01'
+    date_end: '2024-08-01'
+    description: |2-
+        * GIS
+        * Remote sensing
+        * Photogrammetry
+
   - title: Geomatician, Category A Civil Servant, Technical Sector
     company: South Province
     company_url: ''

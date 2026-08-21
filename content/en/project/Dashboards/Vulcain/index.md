@@ -1,6 +1,6 @@
 ---
-title: Dashboard ESRI / Incendies
-summary: Réalisation d'un dashboard avec Arcgis Online à propos des incendies en Nouvelle-Calédonie
+title: ESRI Dashboard / Wildfires
+summary: Building a dashboard with ArcGIS Online about wildfires in New Caledonia
 
 tags:
   - Dashboard

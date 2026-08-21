@@ -33,10 +33,14 @@ content:
       tag: GIS
     - name: Map Design
       tag: Map
+    - name: Dashboard
+      tag: Dashboard
+    - name: Atlas
+      tag: Atlas
     - name: Data Science
-      tag: Python, GeoPandas, Rasterio, H3
-    - name: Data Management 
-      tag: Scrapping, cleanning, catalog, pipeline
+      tag: Python
+    - name: Geoprocessing
+      tag: geoprocessing
 
 design:
   columns: '1'

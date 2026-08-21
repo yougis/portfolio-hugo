@@ -1,6 +1,6 @@
 ---
-title: Atlas QGIS / Incendies
-summary: Réalisation d'un atlas complexe avec QGIS à propos des incendies dans chaque commune de Nouvelle-Calédonie depuis 20 ans.
+title: QGIS Atlas / Wildfires
+summary: Building a complex QGIS atlas of wildfires for every municipality in New Caledonia over the past 20 years.
 
 tags:
   - Atlas
@@ -14,19 +14,18 @@ authors:
 - "Developpeur et administrateur"
 ---
 
-## Description du projet 
+## Project description
 
-This project aims to develop an interactive dashboard using the ESRI platform to visualize and analyze  environmental interest zones under pressure (gestion de l'eau
-, erosion, light pollution ..). Theses dashboards will integrate many detailed spatial data from plenty of data sources.
-        
+Building a complex cartographic atlas with QGIS, retracing the history of wildfires in every municipality of New Caledonia over the past 20 years. The atlas combines land cover data, administrative boundaries and fire histories to produce a series of consistent, reproducible map sheets.
 
+The production chain relies on the QGIS atlas generator: a single layout model, parameterized by municipality, automatically generates all the map sheets. Each sheet includes the maps, municipal statistics and legend elements needed to read wildfire dynamics.
 
-## Compétences exploitées et livrables 
-QGIS
-Data Visualisation
-Data Management
+## Skills used and deliverables
+- QGIS
+- Data Visualisation
+- Data Management
 
-## Galerie d’images
+## Image gallery
 
 {{< gallery >}}
 {{< /gallery >}}
